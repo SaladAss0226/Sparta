@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/toplayout_example"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/mainBackground">
+
+    <ImageView
+        android:id="@+id/imgv_mission_icon"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        tool:src="@drawable/knife"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="90dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+        android:id="@+id/tv_mission_name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="天黑請閉眼"
+        android:textSize="18sp"
+        android:textColor="@color/btn_light"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_have_done"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="11/25白宮晚宴刺殺女主人"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mission_name" />
+
+    <TextView
+        android:id="@+id/tv_have_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="賞金:3000元"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+
+
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_have_done"
+        app:layout_constraintTop_toBottomOf="@+id/tv_have_done" />
+        <TextView
+            android:id="@+id/tv_hunters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申請者:汪汪、polly"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+
+
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_have_done"
+            app:layout_constraintTop_toBottomOf="@+id/tv_have_success" />
+        <TextView
+            android:id="@+id/tv_processing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="進行中"
+            android:textSize="14sp"
+            android:textColor="#ff0000"
+            android:visibility="invisible"
+
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_have_done"
+            app:layout_constraintTop_toBottomOf="@+id/tv_have_success" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="390dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_red">
+
+        <FrameLayout
+            android:id="@+id/layout_soldout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="#000000"
+            android:visibility="invisible"
+
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                android:text="已申請"
+                android:textColor="#FD0000"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_have_reported"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:text="已回報 待審中"
+                android:visibility="invisible"
+                android:textColor="#FD0000"
+                android:textSize="20sp" />
+
+
+
+
+    </FrameLayout>
+
+</FrameLayout>

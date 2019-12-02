@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rewardsparta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".profile.ProfileActivity"></activity>
+        <activity android:name=".missionManager.CheckMissionActivity" />
+        <activity android:name=".soldierManager.SubmitActivity" />
+        <activity android:name=".soldierManager.TakeCaseActivity" />
+        <activity android:name=".soldierManager.PostActivity" />
+        <activity android:name=".missionManager.ChooseHunterActivity" />
+        <activity android:name=".reWard.AddMissionActivity" />
+        <activity android:name=".soldierManager.SoldierActivity" />
+        <activity android:name=".nobodyManager.NobodyActivity" />
+        <activity android:name=".reWard.ReWardActivity" />
+        <activity android:name=".home.HomeActivity" />
+        <activity android:name=".signUp.SignUpActivity" />
+        <activity android:name=".signIn.SignInActivity" />
+        <activity android:name=".welcome.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.rewardsparta.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

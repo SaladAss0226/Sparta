@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileActivity"
+    android:background="@color/mainBackground">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_welcome_img"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        android:text="暱稱:請稍候"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintBottom_toTopOf="@id/tv_role"/>
+
+    <TextView
+        android:id="@+id/tv_role"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        android:text="身分:請稍候"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintBottom_toTopOf="@id/tv_money"/>
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        android:text="錢包:請稍候"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_role"
+        app:layout_constraintBottom_toTopOf="@id/tv_experience"/>
+    <TextView
+        android:id="@+id/tv_experience"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        android:text="已完成總件數:請稍候"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_money"
+        app:layout_constraintBottom_toTopOf="@id/tv_achieve_rate"/>
+    <TextView
+        android:id="@+id/tv_achieve_rate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        android:text="成功達成率:請稍候"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_experience"
+        app:layout_constraintBottom_toTopOf="@id/tv_total_case_money"/>
+    <TextView
+        android:id="@+id/tv_total_case_money"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        android:text="已委託懸賞案總金額:請稍候"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_achieve_rate"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
