@@ -3,5 +3,5 @@
 
 <img src="spartan_201229_3.jpg" height="480">
 <img src="spartan_201229_2.jpg" height="480">
-<img src="spartan_201229_1.jpg" height="480">
 <img src="spartan_201229_0.jpg" height="480">
+<img src="spartan_201229_1.jpg" height="480">
